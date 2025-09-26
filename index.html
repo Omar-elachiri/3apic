@@ -45,10 +45,10 @@
     grid.innerHTML='';
     list.forEach(p => {
       const card = document.createElement('div'); card.className='card';
-      card.innerHTML = `<h3>${p.title}</h3><a href='pdf/${p.filename}' target='_blank'>Voir / Télécharger</a>`;
+      card.innerHTML = `<h3>${p.title}</h3><a href='${p.filename}' target='_blank'>Voir / Télécharger</a>`;
       card.querySelector('a').addEventListener('click',(e)=>{
         e.preventDefault();
-        viewer.innerHTML = `<iframe src='pdf/${p.filename}'></iframe>`;
+        viewer.innerHTML = `<iframe src='${p.filename}'></iframe>`;
       });
       grid.appendChild(card);
     });
@@ -62,4 +62,5 @@
   render(pdfs);
 </script>
 </body>
+
 </html>
