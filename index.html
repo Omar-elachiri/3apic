@@ -13,7 +13,8 @@
   .grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); gap:15px; }
   .card { background:#fff; padding:15px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); display:flex; flex-direction:column; }
   .card h3 { margin:0 0 10px 0; font-size:16px; }
-  .card a { margin-top:auto; text-decoration:none; color:#fff; background:#007bff; text-align:center; padding:8px; border-radius:5px; }
+  .btn { text-decoration:none; color:#fff; background:#007bff; text-align:center; padding:8px; border-radius:5px; margin-top:8px; }
+  .btn.quiz { background:#28a745; } /* bouton vert pour quiz */
   .viewer { margin-top:20px; }
   iframe { width:100%; height:500px; border:none; border-radius:8px; }
   @media(max-width:600px){
@@ -34,9 +35,10 @@
 </div>
 <script>
   const pdfs = [
-    {title:'Quelques matériaux dans notre vie quotidienne', filename:'cours1.pdf'},
-    {title:'Matériaux et électricité', filename:'cours2.pdf'}
+    {title:'Quelques matériaux dans notre vie quotidienne', filename:'cours1.pdf', quiz:'quiz1/index.html'},
+    {title:'Matériaux et électricité', filename:'cours2.pdf', quiz:'quiz2.html'}
   ];
+
   const grid = document.getElementById('grid');
   const viewer = document.getElementById('viewer');
   const q = document.getElementById('q');
@@ -44,9 +46,14 @@
   function render(list){
     grid.innerHTML='';
     list.forEach(p => {
-      const card = document.createElement('div'); card.className='card';
-      card.innerHTML = `<h3>${p.title}</h3><a href='${p.filename}' target='_blank'>Voir / Télécharger</a>`;
-      card.querySelector('a').addEventListener('click',(e)=>{
+      const card = document.createElement('div');
+      card.className='card';
+      card.innerHTML = `
+        <h3>${p.title}</h3>
+        <a href='${p.filename}' target='_blank' class='btn'>Voir / Télécharger</a>
+        <a href='${p.quiz}' class='btn quiz'>Passer au Quiz</a>
+      `;
+      card.querySelector('.btn').addEventListener('click',(e)=>{
         e.preventDefault();
         viewer.innerHTML = `<iframe src='${p.filename}'></iframe>`;
       });
@@ -62,8 +69,4 @@
   render(pdfs);
 </script>
 </body>
-
 </html>
-
-
-

@@ -1,0 +1,68 @@
+[
+    {
+      "question": " Ce qui est utilisé pour fabriquer un objet :",
+      "answers": ["Métaux", "Plastique", "Bois", "Matériau"],
+      "correct": 3
+    },
+    {
+      "question": "Comment identifier le fer des autres métaux ?",
+      "answers": [
+        "Par sa couleur grise",
+        "Par l'aimant",
+        "Par la masse volumique",
+        "Par sa conductivité"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Comment identifier le cuivre des autres métaux ?",
+      "answers": [
+        "Par sa couleur rouge-brique",
+        "Par l'aimant",
+        "Par la masse volumique",
+        "Par sa conductivité"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Comment distinger l'aluminium du zinc ?",
+      "answers": [
+        "Par la couleur",
+        "Par l'aimant",
+        "Par la masse volumique",
+        "Par sa conductivité"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Il flotte sur l'eau douce :",
+      "answers": [
+        "PE",
+        "PS",
+        "PVC",
+        "PET"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Il flotte sur l'eau salée :",
+      "answers": [
+        "PE",
+        "PS",
+        "PVC",
+        "PET"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Il se déforme dans l'eau bouillante :",
+      "answers": [
+        "PE",
+        "PS",
+        "PVC",
+        "PET"
+      ],
+      "correct": 3
+    }
+  ]
+    
