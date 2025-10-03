@@ -1,18 +1,18 @@
 [
     {
-      "question": " Ce qui est utilisé pour fabriquer un objet :",
-      "answers": ["Métaux", "Plastique", "Bois", "Matériau"],
-      "correct": 3
+      "question": " C'est un matériau :",
+      "answers": ["Chaise", "Vélo", "Cuivre", "Fenêtre"],
+      "correct": 2
     },
     {
-      "question": "N'est pas une famille des matériaux :",
+      "question": "Il est fabriqué par un ou plusieurs matériaux :",
       "answers": [
-        "Les métaux",
+        "Le métau",
         "Les oxydants",
-        "Les verres",
-        "Les plastiques"
+        "L'objet",
+        "Le plastique"
       ],
-      "correct": 1
+      "correct": 2
     },
     {
       "question": "Comment identifier le fer des autres métaux ?",
@@ -73,6 +73,26 @@
         "PET"
       ],
       "correct": 3
+    },
+    {
+      "question": "La technique utilisable pour gérer les déchets en plastique est le :",
+      "answers": [
+        "Enfouissement",
+        "Recyclage",
+        "Combustion",
+        "Compostage"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Le verre est un .......utilisé pour fabriquer des objets .",
+      "answers": [
+        "matériau",
+        "objet",
+        "plastique",
+        "métal"
+      ],
+      "correct": 1
     }
   ]
     
