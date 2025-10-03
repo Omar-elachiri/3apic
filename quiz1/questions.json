@@ -5,6 +5,16 @@
       "correct": 3
     },
     {
+      "question": "N'est pas une famille des matériaux :",
+      "answers": [
+        "Les métaux",
+        "Les oxydants",
+        "Les verres",
+        "Les plastiques"
+      ],
+      "correct": 1
+    },
+    {
       "question": "Comment identifier le fer des autres métaux ?",
       "answers": [
         "Par sa couleur grise",
